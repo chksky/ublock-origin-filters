@@ -1,0 +1,9 @@
+! 2024-02-06 https://www.youtube.com
+youtube.com##*[title="YouTube Shorts"]:nth-ancestor(1)
+
+! YouTube: filter out mixes and radios
+youtube.com##ytd-browse #video-title-link[href*="&start_radio=1"]:upward(ytd-rich-item-renderer)
+youtube.com##ytd-search ytd-radio-renderer
+youtube.com##ytd-watch-next-secondary-results-renderer ytd-compact-radio-renderer
+youtube.com##ytd-player div.videowall-endscreen a[data-is-list=true]
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
